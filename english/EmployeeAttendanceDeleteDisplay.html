@@ -58,7 +58,7 @@
                     </li>
                     <li>
                         <form id="navbar-search" class="navbar-form search-form">
-                            <input id="Mysearch" onkeyup="myFunction()" value="" class="form-control" placeholder="TYPE HERE..." type="text">
+                            <input id="Mysearch" onkeyup="myFunction()" value="" class="form-control" placeholder="STATUS HERE..." type="text">
                             <button type="reset" class="btn btn-default"><i class="icon-magnifier"></i></button>
                         </form>
                     </li>
@@ -2390,7 +2390,7 @@
       table = document.getElementById("Mytable");
       tr = table.getElementsByTagName("tr");
       for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[1];
+        td = tr[i].getElementsByTagName("td")[4];
         if (td) {
           txtValue = td.textContent || td.innerText;
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
