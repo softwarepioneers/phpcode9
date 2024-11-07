@@ -902,7 +902,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>ENROLL DRIVERS DATA:</h2>
+                        <h2>ENROLL BUSES DATA:</h2>
                     </div>           
                 </div>
             </div>
@@ -915,54 +915,42 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER NAME:</label>
-                                            <input type="text" name="DriverName"  maxlength="28" placeholder="Driver Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>BUS NUMBER:</label>
+                                            <input type="text" name="BusNumber"  maxlength="28" placeholder="Bus Number" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER REGISTRATION DATE:</label>
-                                            <input  type="text"  name="DriverRegistrationDate" placeholder="Driver Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>BUS REGISTRATION DATE:</label>
+                                            <input  type="text"  name="BusRegistrationDate" placeholder="Bus Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER TYPE:</label>
-                                            <select name="DriverType" placeholder="Driver Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver Type</option>
-                                                <option value="MAN">MAN</option>
-                                                <option value="WOMAN">WOMAN</option>
-                                            </select>
+                                            <label>BUS TYPE:</label>
+                                            <input type="text" name="BusType"  maxlength="28" placeholder="Bus Type" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                   </div>
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER SCHOOL:</label>
-                                            <select name="DriverSchool" placeholder="Driver School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver School</option>
-                                                <option value="SALAAMA SCHOOL">SALAAMA SCHOOL</option>
-                                            </select>
+                                            <label>BUS SCHOOL:</label>
+                                            <input type="text" name="BusSchool"  maxlength="28" placeholder="Bus School" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER JOB:</label>
-                                            <select name="DriverJob" placeholder="Driver Job" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver Job</option>
-                                                <option value="MANAGER">MANAGER</option>
-                                                <option value="ACCOUNTANT">ACCOUNTANT</option>
-                                                <option value="ASSISTANT">ASSISTANT</option>
-                                                <option value="WATCHMAN">WATCHMAN</option>
-                                            </select>
+                                            <label>BUS JOB:</label>
+                                            <input type="text" name="BusJob"  maxlength="28" placeholder="Bus Job" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER NATIONALITY:</label>
-                                            <select name="DriverNationality" data-placeholder="Driver Nationality" value=""  class="anyname form-control" required>
-                                                 <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
+                                            <label>BUS NATIONALITY:</label>
+                                            <input type="text" name="BusNationality"  maxlength="28" placeholder="Bus Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                             <!--<select name="DriverNationality" data-placeholder="Driver Nationality" value=""  class="anyname form-control" required>
+                                                 <select data-placeholder="First Period" class="anyname form-control"> 
                                                     <option value="" selected="" disabled="" >Driver Nationality</option>
                                                     <option value="AFGHANISTAN">AFGHANISTAN</option>
                                                     <option value="ALBANIA">ALBANIA</option>
@@ -1191,7 +1179,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                   
+                                   -->
                                   </div>
                                   <div class="row">
                                                             <!-- <div class="col">
@@ -1202,22 +1190,22 @@
                                     </div> -->
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER PHONE:</label>
-                                            <input type="text" name="DriverPhone" placeholder="Driver Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>BUS DRIVER PHONE:</label>
+                                            <input type="text" name="BusDriverPhone" placeholder="Bus Driver Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER WHATSAPP:</label>
-                                            <input type="text" name="DriverWhatsApp" placeholder="Driver WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>BUS DRIVER WHATSAPP:</label>
+                                            <input type="text" name="BusDriverWhatsApp" placeholder="Bus Driver WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
 
                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER EMAIL:</label>
-                                            <input type="text" name="DriverEmail"  maxlength="90" placeholder="Driver Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>BUS DRIVER EMAIL:</label>
+                                            <input type="text" name="BusDriverEmail"  maxlength="90" placeholder="Bus Driver Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
             
@@ -1227,27 +1215,27 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER REGION:</label>
-                                            <select name="DriverRegion" id="subject" placeholder="Driver Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver Region</option>
+                                            <label>BUS REGION:</label>
+                                            <select name="BusDriverRegion" id="subject" placeholder="Bus Driver Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Bus Driver Region</option>
                                             </select>
                                            
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER CITY:</label>
-                                            <select name="DriverCity" id="topic" placeholder="Driver Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver City</option>
+                                            <label>BUS CITY:</label>
+                                            <select name="BusDriverCity" id="topic" placeholder="Bus Driver Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Bus Driver City</option>
                                             </select>
                                             
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER DISTRICT:</label>
-                                            <select name="DriverDistrict" id="chapter" placeholder="Driver chapter" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver District</option>
+                                            <label>BUS DISTRICT:</label>
+                                            <select name="BusDriverDistrict" id="chapter" placeholder="Bus Driver chapter" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Bus Driver District</option>
                                             </select>
                                             
                                         </div>
