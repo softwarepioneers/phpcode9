@@ -979,9 +979,11 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>USER SCHOOL:</label>
-                                            <input  type="text"  name="UserSchool" placeholder="User School" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <input type="text" name="UserSchool"  maxlength="28" placeholder="User School" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <!-- <input  type="text"  name="UserSchool" placeholder="User School" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  >  -->
                                         </div>
                                     </div>
+
 
                                     
                                     <div class="col">
