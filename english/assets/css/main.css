@@ -8228,9 +8228,10 @@ ul.list-justify.large-number span{
 }
 
 input[type=text]:focus {
-    background-color: #5A5A5A;
+    background-color: #000;
     color: #fff;
   }
+
 
 
  
