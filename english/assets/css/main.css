@@ -8226,12 +8226,4 @@ ul.list-justify.large-number span{
 .widget-cnt h1{
     font-size:100px
 }
-
-input[type=text] {
-    text-transform:capitalize;
-    background-color: #5A5A5A;
-    color: white;
-    border: 2px solid red;
-    border-radius: 4px;
-  }
  
