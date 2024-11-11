@@ -8233,5 +8233,9 @@ input[type=text]:focus {
   }
 
 
+  select[type=text]:focus {
+    background-color: #000;
+    color: #fff;
+  }
 
  
