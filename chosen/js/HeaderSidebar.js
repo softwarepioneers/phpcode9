@@ -10,4 +10,3 @@ class SpecialSidebar extends HTMLElement{
     }
 }
 
-customElements.define(''.)
