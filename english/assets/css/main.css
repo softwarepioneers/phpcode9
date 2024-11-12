@@ -8227,6 +8227,10 @@ ul.list-justify.large-number span{
     font-size:100px
 }
 
+input[type=text] {
+    text-transform: capitalize;
+  }
+
 
 
  
