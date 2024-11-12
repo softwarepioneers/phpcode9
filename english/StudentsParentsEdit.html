@@ -925,8 +925,8 @@
                                             <label>PARENT TYPE:</label>
                                             <select name="ParentType" placeholder="Parent Type" value=""  class="form-control" required>
                                                 <option value="" selected="" disabled="" >Parent Type</option>
-                                                <option value="FATHER">FATHER</option>
-                                                <option value="MOTHER">MOTHER</option>
+                                                <option value="Father">Father</option>
+                                                <option value="Mother">Mother</option>
                                             </select>
                                         </div>
                                     </div>
@@ -953,7 +953,8 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>PARENT EMAIL:</label>
-                                            <input type="text" name="ParentEmail"  maxlength="90" placeholder="Parent Email" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <!--onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}"-->
+                                            <input type="email" name="ParentEmail"  placeholder="Parent Email" value="" class="form-control"  required >
                                         </div>
                                     </div>
                                    
