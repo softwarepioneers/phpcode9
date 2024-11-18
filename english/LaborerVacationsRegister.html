@@ -919,15 +919,15 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>LEBORER NAME:</label>
-                                            <input type="text" name="EmpoyeeName"  maxlength="28" placeholder="Empoyee Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <input type="text" name="LaborerName"  maxlength="28" placeholder="Laborer Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
         
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>LEBORER TYPE:</label>
-                                            <select name="EmpoyeeType" placeholder="Empoyee Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Empoyee Type</option>
+                                            <select name="LaborerType" placeholder="Laborer Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Laborer Type</option>
                                                 <option value="Man">Man</option>
                                                 <option value="Woman">Woman</option>
                                             </select>
@@ -937,7 +937,7 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>LEBORER VACATION DURATION:</label>
-                                            <input type="number" name="EmpoyeeVacationDuration" placeholder="Empoyee Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <input type="number" name="LaborerVacationDuration" placeholder="Laborer Vacation Duration" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
         
@@ -948,22 +948,22 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>LEBORER VACATION START DATE:</label>
-                                            <input  type="text"  name="EmpoyeeVacationStartDate" placeholder="Empoyee Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <input  type="text"  name="LaborerVacationStartDate" placeholder="Laborer Vacation Start Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
         
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>LEBORER VACATION END DATE:</label>
-                                            <input  type="text"  name="EmpoyeeVacationEndDate" placeholder="Empoyee Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <input  type="text"  name="LaborerVacationEndDate" placeholder="Laborer Vacation End Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
         
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>LEBORER VACATION REMARK:</label>
-                                            <select name="EmpoyeeVacationRemark" placeholder="Empoyee Vacation Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Empoyee Vacation Remark</option>
+                                            <select name="LaborerVacationRemark" placeholder="Laborer Vacation Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Laborer Vacation Remark</option>
                                                 <option value="Normal">Normal</option>
                                                 <option value="Emergency">Emergency</option>
                                             </select>
@@ -978,17 +978,17 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>LEBORER SCHOOL:</label>
-                                            <select name="EmpoyeeSchool" placeholder="Empoyee School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Empoyee School</option>
+                                            <select name="LaborerSchool" placeholder="Laborer School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Laborer School</option>
                                                 <option value="Salaama School">Salaama School</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER SECTION:</label>
-                                            <select name="DriverSection" placeholder="Driver Section" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver Section</option>
+                                            <label>LEBORER SECTION:</label>
+                                            <select name="LaborerSection" placeholder="Laborer Section" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Laborer Section</option>
                                                <option value="Manegment ">Manegment </option>
                                                 <option value="Finance ">Finance </option>
                                                 <option value="It ">It </option>
@@ -998,9 +998,9 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>DRIVER JOB:</label>
-                                            <select name="DriverJob" placeholder="Driver Job" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Driver Job</option>
+                                            <label>LEBORER JOB:</label>
+                                            <select name="LaborerJob" placeholder="Laborer Job" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Laborer Job</option>
                                                 <option value="Manager">Manager</option>
                                                 <option value="Accountant">Accountant</option>
                                                 <option value="Assistant">Assistant</option>
@@ -1018,8 +1018,8 @@
                                         <div class="col">
                                             <div class="form-group ">
                                                 <label>LEBORER REGION:</label>
-                                                <select name="EmpoyeeRegion" id="subject" placeholder="Empoyee Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Empoyee Region</option>
+                                                <select name="LaborerRegion" id="subject" placeholder="Laborer Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Laborer Region</option>
                                                 </select>
                                             
                                             </div>
@@ -1028,8 +1028,8 @@
                                         <div class="col">
                                             <div class="form-group ">
                                                 <label>LEBORER CITY:</label>
-                                                <select name="EmpoyeeCity" id="topic" placeholder="Empoyee Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Empoyee City</option>
+                                                <select name="LaborerCity" id="topic" placeholder="Laborer City" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Laborer City</option>
                                                 </select>
                                                 
                                             </div>
@@ -1038,8 +1038,8 @@
                                         <div class="col">
                                             <div class="form-group ">
                                                 <label>LEBORER DISTRICT:</label>
-                                                <select name="EmpoyeeDistrict" id="chapter" placeholder="Empoyee chapter" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Empoyee District</option>
+                                                <select name="LaborerDistrict" id="chapter" placeholder="Laborer District" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Laborer District</option>
                                                 </select>
                                                 
                                             </div>
