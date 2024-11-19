@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>DELETE STUDENTS ATTENDANCE</title>
+<title>DELETE STAFF ATTENDANCE</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -893,7 +893,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>DELETE STUDENTS ATTENDANCE:</h2>
+                        <h2>DELETE STAFF ATTENDANCE:</h2>
                     </div>           
                     <!-- <div class="col-lg-7 col-md-4 col-sm-12 text-right">
                         <ul class="breadcrumb justify-content-end">
@@ -918,26 +918,26 @@
                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT NAME:</label>
-                                            <input type="text" name="StudentName"  maxlength="28" placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <label>STAFF NAME:</label>
+                                            <input type="text" name="StaffName"  maxlength="28" placeholder="Staff Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT TYPE:</label>
-                                            <select name="StudentType" placeholder="Student Type" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Type</option>
-                                                <option value="Boy">Boy</option>
-                                                <option value="Girl">Girl</option>
+                                            <label>STAFF TYPE:</label>
+                                            <select name="StaffType" placeholder="Staff Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Type</option>
+                                                <option value="Man">Man</option>
+                                                <option value="Woman">Woman</option>
                                             </select>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE TIME:</label>
-                                            <input type="text" name="StudentAttendanceTime" placeholder="Student Attendance Time" value="" class="form-control" onblur="(this.type='text')"  onfocus="(this.type='time')" required>
+                                            <label>STAFF ATTENDANCE TIME:</label>
+                                            <input type="text" name="StaffAttendanceTime" placeholder="Staff Attendance Time" value="" class="form-control" onblur="(this.type='text')"  onfocus="(this.type='time')" required>
                                         </div>
                                     </div>
 
@@ -947,16 +947,16 @@
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE DATE:</label>
-                                            <input  type="text"  name="StudentAttendanceDate" placeholder="Student Attendance Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>STAFF ATTENDANCE DATE:</label>
+                                            <input  type="text"  name="StaffAttendanceDate" placeholder="Staff Attendance Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE STATUS:</label>
-                                            <select name="StudentAttendanceStatus" placeholder="Student Attendance Status" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Attendance Status</option>
+                                            <label>STAFF ATTENDANCE STATUS:</label>
+                                            <select name="StaffAttendanceStatus" placeholder="Staff Attendance Status" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Attendance Status</option>
                                                 <option value="Present">Present</option>
                                                 <option value="Absent">Absent</option>
                                             </select>
@@ -965,9 +965,9 @@
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT ATTENDANCE REMARK:</label>
-                                            <select name="StudentAttendanceRemark" placeholder="Student Attendance Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Attendance Remark</option>
+                                            <label>STAFF ATTENDANCE REMARK:</label>
+                                            <select name="StaffAttendanceRemark" placeholder="Staff Attendance Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Attendance Remark</option>
                                                 <option value="Normal">Normal</option>
                                                 <option value="Emergency">Emergency</option>
                                             </select>
@@ -979,61 +979,202 @@
                                   <div class="row">
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT SCHOOL:</label>
-                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student School</option>
+                                            <label>STAFF SCHOOL:</label>
+                                            <select name="StaffSchool" placeholder="Staff School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff School</option>
                                                 <option value="Salaama School">Salaama School</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT STAGE:</label>
-                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Stage</option>
-                                                <option value="Kg">Kg</option>
-                                                <option value="Primary">Primary</option>
-                                                <option value="Preparatory">Preparatory</option>
-                                                <option value="Secondary">Secondary</option>
+                                            <label>STAFF SECTION:</label>
+                                            <select name="StaffSection" placeholder="Staff Section" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Section</option>
+                                                <option value="Stendent">Stendent</option>
+                                                <option value="Teacher">Teacher</option>
+                                                <option value="Employee">Employee</option>
+                                                <option value="Laborer">Laborer</option>
+                                                <option value="Driver">Driver</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT CLASS:</label>
-                                            <!-- <input type="text" name="StudentClass"  maxlength="28" placeholder="Student Class" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >  -->
-                                            <select name="StudentClass" data-placeholder="Student Class" value=""  class="anyname form-control" required>
-                                                <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
-                                                    <option value="" selected="" disabled="" >Student Class</option>
-                                                    <option value="Class A">Class A</option>
-                                                    <option value="Class B">Class B</option>
-                                                    <option value="Class C">Class C</option>
-                                                    <option value="Class D">Class D</option>
-                                                    <option value="Class E">Class E</option>
-                                                    <option value="Class F">Class F</option>
-                                                    <option value="Class G">Class G</option>
-                                                    <option value="Class H">Class H</option>
-                                                    <option value="Class I">Class I</option>
-                                                    <option value="Class J">Class J</option>
-                                                    <option value="Class K">Class K</option>
-                                                    <option value="Class L">Class L</option>
-                                                    <option value="Class M">Class M</option>
-                                                    <option value="Class N">Class N</option>
-                                                    <option value="Class O">Class O</option>
-                                                    <option value="Class P">Class P</option>
-                                                    <option value="Class Q">Class Q</option>
-                                                    <option value="Class R">Class R</option>
-                                                    <option value="Class S">Class S</option>
-                                                    <option value="Class T">Class T</option>
-                                                    <option value="Class U">Class U</option>
-                                                    <option value="Class V">Class V</option>
-                                                    <option value="Class W">Class W</option>
-                                                    <option value="Class X">Class X</option>
-                                                    <option value="Class Y">Class Y</option>
-                                                    <option value="Class Z">Class Z</option>
+                                            <label>STAFF NATIONALITY:</label>
+                                            <select name="StaffNationality" data-placeholder="Staff Nationality" value=""  class="anyname form-control" required>
+                                                 <!-- <select data-placeholder="First Period" class="anyname form-control"> -->
+                                                    <option value="" selected="" disabled="" >Staff Nationality</option>
+                                                    <option value="Afghanistan">Afghanistan</option>
+                                                    <option value="Albania">Albania</option>
+                                                    <option value="Algeria">Algeria</option>
+                                                    <option value="Andorra">Andorra</option>
+                                                    <option value="Angola">Angola</option>
+                                                    <option value="Anguilla">Anguilla</option>
+                                                    <option value="Argentina">Argentina</option>
+                                                    <option value="Armenia">Armenia</option>
+                                                    <option value="Aruba">Aruba</option>
+                                                    <option value="Australia">Australia</option>
+                                                    <option value="Austria">Austria</option>
+                                                    <option value="Azerbaijan">Azerbaijan</option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrain">Bahrain</option>
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="Barbados">Barbados</option>
+                                                    <option value="Belarus">Belarus</option>
+                                                    <option value="Belgium">Belgium</option>
+                                                    <option value="Belize">Belize</option>
+                                                    <option value="Benin">Benin</option>
+                                                    <option value="Bermuda">Bermuda</option>
+                                                    <option value="Bhutan">Bhutan</option>
+                                                    <option value="Bolivia">Bolivia</option>
+                                                    <option value="Botswana">Botswana</option>
+                                                    <option value="Brazil">Brazil</option>
+                                                    <option value="Brunei">Brunei</option>
+                                                    <option value="Bulgaria">Bulgaria</option>
+                                                    <option value="Burundi">Burundi</option>
+                                                    <option value="Cambodia">Cambodia</option>
+                                                    <option value="Cameroon">Cameroon</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="Chad">Chad</option>
+                                                    <option value="Chile">Chile</option>
+                                                    <option value="China">China</option>
+                                                    <option value="Colombia">Colombia</option>
+                                                    <option value="Comoros">Comoros</option>
+                                                    <option value="Croatia">Croatia</option>
+                                                    <option value="Cuba">Cuba</option>
+                                                    <option value="Cyprus">Cyprus</option>
+                                                    <option value="Denmark">Denmark</option>
+                                                    <option value="Djibouti">Djibouti</option>
+                                                    <option value="Dominica">Dominica</option>
+                                                    <option value="Ecuador">Ecuador</option>
+                                                    <option value="Egypt">Egypt</option>
+                                                    <option value="Eritrea">Eritrea</option>
+                                                    <option value="Estonia">Estonia</option>
+                                                    <option value="Ethiopia">Ethiopia</option>
+                                                    <option value="Fiji">Fiji</option>
+                                                    <option value="Finland">Finland</option>
+                                                    <option value="France">France</option>
+                                                    <option value="Gabon">Gabon</option>
+                                                    <option value="Gambia">Gambia</option>
+                                                    <option value="Gaza">Gaza</option>
+                                                    <option value="Georgia">Georgia</option>
+                                                    <option value="Germany">Germany</option>
+                                                    <option value="Ghana">Ghana</option>
+                                                    <option value="Gibraltar">Gibraltar</option>
+                                                    <option value="Greece">Greece</option>
+                                                    <option value="Grenada">Grenada</option>
+                                                    <option value="Guadeloupe">Guadeloupe</option>
+                                                    <option value="Guatemala">Guatemala</option>
+                                                    <option value="Guinea">Guinea</option>
+                                                    <option value="Guyana">Guyana</option>
+                                                    <option value="Haiti">Haiti</option>
+                                                    <option value="Holland">Holland</option>
+                                                    <option value="Honduras">Honduras</option>
+                                                    <option value="Hungary">Hungary</option>
+                                                    <option value="Iceland">Iceland</option>
+                                                    <option value="India">India</option>
+                                                    <option value="Indonesia">Indonesia</option>
+                                                    <option value="Iran">Iran</option>
+                                                    <option value="Iraq">Iraq</option>
+                                                    <option value="Ireland">Ireland</option>
+                                                    <option value="Italy">Italy</option>
+                                                    <option value="Jamaica">Jamaica</option>
+                                                    <option value="Japan">Japan</option>
+                                                    <option value="Jordan">Jordan</option>
+                                                    <option value="Kampuchea">Kampuchea</option>
+                                                    <option value="Kazakhstan">Kazakhstan</option>
+                                                    <option value="Kenya">Kenya</option>
+                                                    <option value="Kiribati">Kiribati</option>
+                                                    <option value="Kosovo">Kosovo</option>
+                                                    <option value="Kuwait">Kuwait</option>
+                                                    <option value="Laos">Laos</option>
+                                                    <option value="Latvia">Latvia</option>
+                                                    <option value="Lebanon">Lebanon</option>
+                                                    <option value="Lesotho">Lesotho</option>
+                                                    <option value="Liberia">Liberia</option>
+                                                    <option value="Libya">Libya</option>
+                                                    <option value="Lithuania">Lithuania</option>
+                                                    <option value="Macau">Macau</option>
+                                                    <option value="Macedonia">Macedonia</option>
+                                                    <option value="Madagascar">Madagascar</option>
+                                                    <option value="Malawi">Malawi</option>
+                                                    <option value="Malaysia">Malaysia</option>
+                                                    <option value="Maldives">Maldives</option>
+                                                    <option value="Mali">Mali</option>
+                                                    <option value="Malta">Malta</option>
+                                                    <option value="Martinique">Martinique</option>
+                                                    <option value="Mauritania">Mauritania</option>
+                                                    <option value="Mauritius">Mauritius</option>
+                                                    <option value="Mexico">Mexico</option>
+                                                    <option value="Monaco">Monaco</option>
+                                                    <option value="Mongolia">Mongolia</option>
+                                                    <option value="Montserrat">Montserrat</option>
+                                                    <option value="Morocco">Morocco</option>
+                                                    <option value="Mozambique">Mozambique</option>
+                                                    <option value="Namibia">Namibia</option>
+                                                    <option value="Nauru">Nauru</option>
+                                                    <option value="Nepal">Nepal</option>
+                                                    <option value="Netherlands">Netherlands</option>
+                                                    <option value="Nicaragua">Nicaragua</option>
+                                                    <option value="Niger">Niger</option>
+                                                    <option value="Nigeria">Nigeria</option>
+                                                    <option value="Niue">Niue</option>
+                                                    <option value="Norway">Norway</option>
+                                                    <option value="Oman">Oman</option>
+                                                    <option value="Pakistan">Pakistan</option>
+                                                    <option value="Panama">Panama</option>
+                                                    <option value="Paraguay">Paraguay</option>
+                                                    <option value="Peru">Peru</option>
+                                                    <option value="Philippines">Philippines</option>
+                                                    <option value="Poland">Poland</option>
+                                                    <option value="Portugal">Portugal</option>
+                                                    <option value="Qatar">Qatar</option>
+                                                    <option value="Romania">Romania</option>
+                                                    <option value="Russia">Russia</option>
+                                                    <option value="Rwanda">Rwanda</option>
+                                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                                    <option value="Senegal">Senegal</option>
+                                                    <option value="Seychelles">Seychelles</option>
+                                                    <option value="Singapore">Singapore</option>
+                                                    <option value="Slovenia">Slovenia</option>
+                                                    <option value="Somalia">Somalia</option>
+                                                    <option value="Somaliland">Somaliland</option>
+                                                    <option value="South Africa">South Africa</option>
+                                                    <option value="South Korea">South Korea</option>
+                                                    <option value="Spain">Spain</option>
+                                                    <option value="Sudan">Sudan</option>
+                                                    <option value="Suriname">Suriname</option>
+                                                    <option value="Swaziland">Swaziland</option>
+                                                    <option value="Sweden">Sweden</option>
+                                                    <option value="Switzerland">Switzerland</option>
+                                                    <option value="Syria">Syria</option>
+                                                    <option value="Taiwan">Taiwan</option>
+                                                    <option value="Tanzania">Tanzania</option>
+                                                    <option value="Thailand">Thailand</option>
+                                                    <option value="Togo">Togo</option>
+                                                    <option value="Tonga">Tonga</option>
+                                                    <option value="Tunisia">Tunisia</option>
+                                                    <option value="Turkey">Turkey</option>
+                                                    <option value="Turkmenistan">Turkmenistan</option>
+                                                    <option value="Uganda">Uganda</option>
+                                                    <option value="Ukraine">Ukraine</option>
+                                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Uruguay">Uruguay</option>
+                                                    <option value="Uzebekistan">Uzebekistan</option>
+                                                    <option value="Venezuela">Venezuela</option>
+                                                    <option value="Vietnam">Vietnam</option>
+                                                    <option value="Western Sahara">Western Sahara</option>
+                                                    <option value="Western Samoa">Western Samoa</option>
+                                                    <option value="Yemen">Yemen</option>
+                                                    <option value="Yugoslavia">Yugoslavia</option>
+                                                    <option value="Zaire">Zaire</option>
+                                                    <option value="Zambia">Zambia</option>
+                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                    
 
-                                           </select>
-                  
+                                            </select>
                                         </div>
                                     </div>
 
@@ -1045,9 +1186,9 @@
                                    
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>STUDENT REGION:</label>
-                                                <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Student Region</option>
+                                                <label>STAFF REGION:</label>
+                                                <select name="StaffRegion" id="subject" placeholder="Staff Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Staff Region</option>
                                                 </select>
                                                
                                             </div>
@@ -1055,9 +1196,9 @@
 
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>STUDENT CITY:</label>
-                                                <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Student City</option>
+                                                <label>STAFF CITY:</label>
+                                                <select name="StaffCity" id="topic" placeholder="Staff Region" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Staff City</option>
                                                 </select>
                                                 
                                             </div>
@@ -1065,9 +1206,9 @@
 
                                         <div class="col">
                                             <div class="form-group ">
-                                                <label>STUDENT DISTRICT:</label>
-                                                <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                                                    <option value="" selected="" disabled="" >Student District</option>
+                                                <label>STAFF DISTRICT:</label>
+                                                <select name="StaffDistrict" id="chapter" placeholder="Staff chapter" value="" class="form-control" required>
+                                                    <option value="" selected="" disabled="" >Staff District</option>
                                                 </select>
                                                 
                                             </div>
